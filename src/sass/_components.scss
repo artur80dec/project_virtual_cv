@@ -1,0 +1,131 @@
+.hero-img {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.hero-img::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: $shadow-bg;
+}
+
+.hero-img-darker {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.hero-img-darker::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: $shadow-darker;
+}
+
+.hero-img-darker-blue {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+.hero-img-darker-blue::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: $shadow-blue;
+}
+
+.section-title {
+  position: relative;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  h2 {
+    position: absolute;
+    font-weight: bold;
+    width: fit-content;
+    font-size: 2em;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 5px;
+      bottom: -10px;
+      left: 0;
+      background-color: $dark-blue;
+  }
+  }
+}
+
+.section-title-white {
+  position: relative;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  h2 {
+    position: absolute;
+    font-weight: bold;
+    width: fit-content;
+    font-size: 2em;
+    color: $light-gray;
+    border-radius: 25px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 5px;
+      bottom: -10px;
+      left: 0;
+      background-color: $light-gray;
+  }
+  }
+}
+
+
+// .section-title-white {
+//   position: relative;
+//   text-align: center;
+//   padding: 2em 0 3em;
+//   text-transform: uppercase;
+//   font-weight: bold;
+//   color: $light;
+
+//   &::before {
+//     position: absolute;
+//     content: '';
+//     bottom: 2.4em;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     width: 4em;
+//     height: 3px;
+//     background-color: $light-gray;
+//   }
+// }
