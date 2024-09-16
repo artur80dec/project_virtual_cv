@@ -593,7 +593,22 @@ header {
 // SKILL
 
 
+.skills {
 
+  &__heading-main {
+    color: $light-gray;
+  }
+
+  &__card-tittle {
+    color: $light-gray;
+    text-transform: uppercase;
+    padding: 2em;
+  }
+
+
+}
+
+.cls-1{fill:blue;fill-rule:evenodd;}
 
 
 

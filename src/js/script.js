@@ -191,5 +191,23 @@ allHeadingExp.forEach(infoBox => infoBox.addEventListener('click', openInfo));
 window.addEventListener('click', clickOut);
 buttonToggler.addEventListener('click', hiddenMenu);
 
+// changing color in skills
+
+// const skillImg = document.querySelector('.skills__img');
+
+// const changeImg = () => { setTimeout(() => {
+//   skillImg.innerHTML = '';
+//   skillImg.innerHTML = '<img src="./src/img/companies_icons/html copy.svg" width="80px" alt="" ">';
+// }, 2000);
+// }
+
+// const backImg = () => {
+//   skillImg.innerHTML = '';
+//   skillImg.innerHTML = '<img src="./src/img/companies_icons/html.svg" width="80px" alt="">'
+// }
+
+// skillImg.addEventListener('mouseenter', changeImg);
+// skillImg.addEventListener('mouseleave', backImg);
+
 
 
