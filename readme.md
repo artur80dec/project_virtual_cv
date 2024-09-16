@@ -9,3 +9,8 @@ we continue
 we continue
 > [!NOTE]
 > we start at | 10:00
+
+we continule
+> [!NOTE]
+>we have installed gulp.. o yeaa
+

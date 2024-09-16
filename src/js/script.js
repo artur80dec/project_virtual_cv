@@ -70,10 +70,10 @@ const occupation = document.querySelector('.experience__label--occupation');
 const switcher = () => {
   expBtn.forEach(btn => btn.addEventListener('click', ()=> {
     if (btn.matches('.experience__year--one')) {
-      nameCompany.textContent = '';
-      nameCompany.textContent = 'Sabert Poland: sp z o.o.';
-      occupation.textContent = '';
-      occupation.textContent = 'pracownik magazynowy';
+      nameCompany.innerHTML = '';
+      nameCompany.innerHTML = '<p>Sabert Poland: sp z o.o.</p>';
+      occupation.innerHTML = '';
+      occupation.innerHTML = '<p>pracownik magazynowy</p>';
       expDetail.innerHTML = '';
       expDetail.innerHTML = `<ul>
         <li>pakowanie gotowych produktów firmy „Sabert” w opakowanie zbiorcze</li>
@@ -83,10 +83,10 @@ const switcher = () => {
         <li>drukowanie etykiet</li>
       </ul>`;
     } else if (btn.matches('.experience__year--two'))  {
-      nameCompany.textContent = '';
-      nameCompany.textContent = 'UPS Global Business Services';
-      occupation.textContent = '';
-      occupation.textContent = 'pracownik administracyjny';
+      nameCompany.innerHTML = '';
+      nameCompany.innerHTML = '<p>UPS Global Business Services</p>';
+      occupation.innerHTML = '';
+      occupation.innerHTML = '<p>pracownik administracyjny</p>';
       expDetail.innerHTML = '';
       expDetail.innerHTML = `<ul>
         <li>sporządzanie raportów z przeprocesowanych reklamacji z poprzedniego dnia w Excel’u</li>
@@ -98,10 +98,10 @@ const switcher = () => {
         <li>przygotowania raportu z ruchu reklamacyjnego wybranych firm w stosunku do firmy UPS.</li>
       </ul>`
     } else if (btn.matches('.experience__year--three'))  {
-      nameCompany.textContent = '';
-      nameCompany.textContent = 'Ceri International';
-      occupation.textContent = '';
-      occupation.textContent = 'asystent ds. obsługi procesów bankowych';
+      nameCompany.innerHTML = '';
+      nameCompany.innerHTML = '<p>Ceri International</p>';
+      occupation.innerHTML = '';
+      occupation.innerHTML = '<p>asystent ds. obsługi procesów bankowych</p>';
       expDetail.innerHTML = '';
       expDetail.innerHTML = `<ul>
         <li>weryfikacja dokumentacji klientów niemieckiego Banku „CommerzBank” pod względem poprawności danych z wewnętrzną bazą elektroniczną.</li>
@@ -110,10 +110,10 @@ const switcher = () => {
         <li>archiwizacja zweryfikowanych dokumentów do magazynu.</li>
       </ul>`
     } else if (btn.matches('.experience__year--four'))  {
-      nameCompany.textContent = '';
-      nameCompany.textContent = 'Voice Contact Center';
-      occupation.textContent = '';
-      occupation.textContent = 'konsultant ds. obsługi klienta';
+      nameCompany.innerHTML = '';
+      nameCompany.innerHTML = '<p>Voice Contact Center</p>';
+      occupation.innerHTML = '';
+      occupation.innerHTML = '<p>konsultant ds. obsługi klienta</p>';
       expDetail.innerHTML = '';
       expDetail.innerHTML = `<ul>
         <li>uzupełnianie brakującej dokumentacji w zarejestrowanych szkodach</li>
@@ -125,10 +125,10 @@ const switcher = () => {
         <li>ustalanie telefonicznie terminów oględzin z poszkodowanymi</li>
       </ul>`
     } else if (btn.matches('.experience__year--five'))  {
-      nameCompany.textContent = '';
-      nameCompany.textContent = 'Compal Europe Poland';
-      occupation.textContent = '';
-      occupation.textContent = 'tester płyt głównych';
+      nameCompany.innerHTML = '';
+      nameCompany.innerHTML = '<p>Compal Europe Poland</p>';
+      occupation.innerHTML = '';
+      occupation.innerHTML = '<p>tester płyt głównych</p>';
       expDetail.innerHTML = '';
       expDetail.innerHTML = `<ul>
         <li>sprawdzanie stabilności systemu</li>
@@ -138,10 +138,10 @@ const switcher = () => {
         <li>szkolenie i przygotowywanie nowozatrudnionych osób do pracy na stanowisku serwisanta komputerowego</li>
       </ul>`
     } else if (btn.matches('.experience__year--six'))  {
-      nameCompany.textContent = '';
-      nameCompany.textContent = 'DHL Express';
-      occupation.textContent = '';
-      occupation.textContent = 'doradca klienta';
+      nameCompany.innerHTML = '';
+      nameCompany.innerHTML = '<p>DHL Express</p>';
+      occupation.innerHTML = '';
+      occupation.innerHTML = '<p>doradca klienta</p>';
       expDetail.innerHTML = '';
       expDetail.innerHTML = `<ul>
         <li>rejestracja zleceń usług transportowych</li>
@@ -152,10 +152,10 @@ const switcher = () => {
         <li>rejestrowanie reklamacji</li>
       </ul>`
     } else if (btn.matches('.experience__year--seven'))  {
-      nameCompany.textContent = '';
-      nameCompany.textContent = 'Nomi';
-      occupation.textContent = '';
-      occupation.textContent = 'sprzedawca';
+      nameCompany.innerHTML = '';
+      nameCompany.innerHTML = '<p>Nomi</p>';
+      occupation.innerHTML = '';
+      occupation.innerHTML = '<p>sprzedawca</p>';
       expDetail.innerHTML = '';
       expDetail.innerHTML = `<ul>
       <li>kontrola zamówień towarów</li>
@@ -169,20 +169,24 @@ const switcher = () => {
 
 // stylowanie div'ów z datami
 
-const switcherStyleofDates = (e) => {
-  if (e.target.matches('.experience__year-check')) {
-    e.target.classList.remove('experience__year-check');
-  } else {
-    expBtn.forEach(it => it.classList.remove('experience__year-check'));
-    e.target.classList.add('experience__year-check');
-  }
-}
+// const switcherStyleofDates = (e) => {
+//   if (e.target.matches('.experience__year-check')) {
+//     e.target.classList.remove('experience__year-check');
+//   } else {
+//     expBtn.forEach(it => it.classList.remove('experience__year-check'));
+//     e.target.classList.add('experience__year-check');
+//   }
+// }
 
+const changeStyle = (e) => {
+  expBtn.forEach(it => it.classList.remove('experience__year-check'));
+  e.target.classList.add('experience__year-check');
+}
 
 
 switcher();
 
-expBtn.forEach(it => it.addEventListener('click', switcherStyleofDates));
+expBtn.forEach(it => it.addEventListener('click', changeStyle));
 allHeadingExp.forEach(infoBox => infoBox.addEventListener('click', openInfo));
 window.addEventListener('click', clickOut);
 buttonToggler.addEventListener('click', hiddenMenu);

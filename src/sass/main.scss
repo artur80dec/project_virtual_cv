@@ -240,8 +240,8 @@ header {
 
 
 .experience {
-  // background-color: $light-gray;
-  // height: 80vh;
+  
+  // height: 90vh;
   
   
   &__box {
@@ -421,6 +421,8 @@ header {
 
 .experience {
 
+  padding-bottom: 1em;
+
   &__large-view {
     height: 100vh;
   }
@@ -435,16 +437,17 @@ header {
 
   &__year {
 
-    background-color: $orange;
+    background-color: $main-color;
+    // border: 4px solid $dark-blue;
     @include experience;
     font-size: 29px;
     cursor: pointer;
     border-radius: 8px;
     color: $shadow-blue;
-    transition: scale .8s, background-color .5s, color .3s;
+    transition: scale .5s, background-color .5s, color .3s;
 
     &:hover {
-      scale: (.98);
+      scale: (.95);
     }
 
 
@@ -498,7 +501,7 @@ header {
 
   &__label--co {
     position: relative;
-    background-color: royalblue;
+    background-color: $dark-blue;
     color: $light-gray;
     flex-grow: 2;
     width: 100%;
@@ -508,29 +511,10 @@ header {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
 
-    &::before {
-      position: absolute;
-      content: '';
-      left: 0;
-      top: 20px;
-      width: 100%;
-      height: 5px;
-      background-color: #fff;
-    }
-
-    &::after {
-      position: absolute;
-      content: '';
-      left: 0;
-      bottom: 20px;
-      width: 100%;
-      height: 5px;
-      background-color: #fff;
-    }
-
     p {
       margin: 0;
       padding: 0;
+      animation: liItem .2s linear forwards;
     }
 
   }
@@ -543,10 +527,13 @@ header {
     border-radius: 8px;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-
+    color: $light-gray;
+    // border: 4px solid $dark-blue;
+    
     p {
       margin: 0;
       padding: 0;
+      animation: liItem .2s linear forwards;
     }
   }
 
@@ -567,8 +554,10 @@ header {
       font-size: 18px;
       color: $light-gray;
       opacity: 1;
-      animation: liItem .9s linear forwards;
+      animation: liItem .2s linear forwards;
     }
+
+    
 
     @keyframes liItem {
       0% {
@@ -583,6 +572,26 @@ header {
     }
   }
 }
+
+.animation {
+  animation: liItem .9s linear forwards;
+
+  @keyframes liItem {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+
+// SKILL
+
 
 
 
@@ -684,6 +693,9 @@ header {
   }
 
   .experience {
+
+    height: 90vh;
+    margin: 0;
 
     &__detail {
 
