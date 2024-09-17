@@ -30,6 +30,10 @@ nav {
     font-weight: bold;
     
   }
+
+  .navbar .nav-link {
+    font-size: 10px;
+  }
  
   
   .navbar-expand-lg {
@@ -59,7 +63,7 @@ nav {
     position: relative;
     color: $light;
     transition: color .1s;
-    font-size: 19px;
+    // font-size: 19px;
     text-transform: uppercase;
   }
   .nav-link:hover {
@@ -671,6 +675,31 @@ header {
   
 }
 
+// COURSES
+
+.courses {
+  
+  h4 {
+    font-size: 1rem;
+    opacity: .5;
+    padding-left: 1rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+    color: $main-color;
+    padding-left: 1.2rem;
+  }
+}
+
+// COURSES on PC
+
+.carousel-indicators {
+  padding-bottom: 20px;
+}
+
+
+
 
 
 // =====================
@@ -755,7 +784,7 @@ header {
   .navbar {
 
     .nav-link {
-      font-size: 22px;
+      font-size: 17px;
     }
   }
 
