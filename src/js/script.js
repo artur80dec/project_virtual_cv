@@ -191,23 +191,26 @@ allHeadingExp.forEach(infoBox => infoBox.addEventListener('click', openInfo));
 window.addEventListener('click', clickOut);
 buttonToggler.addEventListener('click', hiddenMenu);
 
-// changing color in skills
+// changing graphs in skills
 
+// const skillContainer = document.querySelector('.skills__container');
 // const skillImg = document.querySelector('.skills__img');
 
-// const changeImg = () => { setTimeout(() => {
-//   skillImg.innerHTML = '';
-//   skillImg.innerHTML = '<img src="./src/img/companies_icons/html copy.svg" width="80px" alt="" ">';
-// }, 2000);
+// const changeImg = () => {
+//   // skillImg.innerHTML = '';
+//   skillImg.classList.add('skills__img--animation');
+//   skillImg.innerHTML = '<img src="./src/img/companies_icons/html5-svgrepo-com.svg" alt="" width="80px">';
+
 // }
 
 // const backImg = () => {
-//   skillImg.innerHTML = '';
+//   // skillImg.innerHTML = '';
+//   skillImg.classList.remove('skills__img--animation');
 //   skillImg.innerHTML = '<img src="./src/img/companies_icons/html.svg" width="80px" alt="">'
 // }
 
-// skillImg.addEventListener('mouseenter', changeImg);
-// skillImg.addEventListener('mouseleave', backImg);
+// skillContainer.addEventListener('mouseenter', changeImg);
+// skillContainer.addEventListener('mouseleave', backImg);
 
 
 
