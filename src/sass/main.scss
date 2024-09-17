@@ -678,6 +678,10 @@ header {
 // COURSES
 
 .courses {
+
+  .carousel-item {
+    height: 680px;
+  }
   
   h4 {
     font-size: 1rem;
@@ -690,14 +694,63 @@ header {
     color: $main-color;
     padding-left: 1.2rem;
   }
+
+  &__slide {
+    border-radius: 8px;
+    overflow: hidden;
+  }
 }
 
 // COURSES on PC
 
-.carousel-indicators {
-  padding-bottom: 20px;
+.skills {
+
+  &__lg-container {
+    margin-bottom: 3em;
+  }
+}
+.carousel-caption {
+  right: 0;
+  left: 0;
+  padding: 10px 0;
+  height: 40%;
+  background-color: rgba(0, 0, 0, .8);
 }
 
+.h5 {
+
+  &_title {
+    font-size: 1.6rem;
+  }
+
+  &_school {
+    font-size: .9rem;
+  }
+
+  &_year {
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+  }
+}
+.p_description {
+  padding: 0 3em;
+  text-align: justify;
+  font-size: 1.2rem;
+
+  &-one {
+    padding-top: 1.5em;
+  }
+}
+
+.h5_title,
+.h5_school,
+.h5_year,
+.p_description {
+  color: $light-gray;
+}
+
+
+// FOOTER
 
 
 
