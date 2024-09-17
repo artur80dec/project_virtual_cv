@@ -595,6 +595,11 @@ header {
 
 .skills {
 
+  &__container {
+    // border: 1px solid wheat;
+    margin: 3em 0;
+  }
+
   &__heading-main {
     color: $light-gray;
   }
@@ -602,13 +607,38 @@ header {
   &__card-tittle {
     color: $light-gray;
     text-transform: uppercase;
-    padding: 2em;
+    padding: 1em;
+    // border: 1px dashed $light-gray;
+    background-color: $light-gray;
+    color: #333;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    height: 30px;
+    @include experience;
+    opacity: .7;
+    font-size: 1em;
   }
 
+  &__img {
+    opacity: .7;
+    // border: 1px solid wheat;
+  }
 
+  &__card-text {
+    padding-top: 1em;
+    color: $light-gray;
+    font-size: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    // border: 1px solid wheat;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  
 }
-
-.cls-1{fill:blue;fill-rule:evenodd;}
 
 
 
