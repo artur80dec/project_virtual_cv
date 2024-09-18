@@ -167,16 +167,6 @@ const switcher = () => {
   }));
 };
 
-// stylowanie div'ów z datami
-
-// const switcherStyleofDates = (e) => {
-//   if (e.target.matches('.experience__year-check')) {
-//     e.target.classList.remove('experience__year-check');
-//   } else {
-//     expBtn.forEach(it => it.classList.remove('experience__year-check'));
-//     e.target.classList.add('experience__year-check');
-//   }
-// }
 
 const changeStyle = (e) => {
   expBtn.forEach(it => it.classList.remove('experience__year-check'));
@@ -191,26 +181,7 @@ allHeadingExp.forEach(infoBox => infoBox.addEventListener('click', openInfo));
 window.addEventListener('click', clickOut);
 buttonToggler.addEventListener('click', hiddenMenu);
 
-// changing graphs in skills
 
-// const skillContainer = document.querySelector('.skills__container');
-// const skillImg = document.querySelector('.skills__img');
-
-// const changeImg = () => {
-//   // skillImg.innerHTML = '';
-//   skillImg.classList.add('skills__img--animation');
-//   skillImg.innerHTML = '<img src="./src/img/companies_icons/html5-svgrepo-com.svg" alt="" width="80px">';
-
-// }
-
-// const backImg = () => {
-//   // skillImg.innerHTML = '';
-//   skillImg.classList.remove('skills__img--animation');
-//   skillImg.innerHTML = '<img src="./src/img/companies_icons/html.svg" width="80px" alt="">'
-// }
-
-// skillContainer.addEventListener('mouseenter', changeImg);
-// skillContainer.addEventListener('mouseleave', backImg);
 
 
 
