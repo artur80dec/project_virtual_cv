@@ -9,7 +9,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 102px;
+  scroll-padding-top: 80px;
   font-size: 62.5%;
 }
 
@@ -22,6 +22,10 @@ body {
 nav {
   z-index: 5;
   transition: background-color .4s;
+
+  .space {
+    padding-left: 10px;
+  }
 
   i.fa-solid {
     font-size: 30px;
@@ -66,6 +70,8 @@ nav {
     transition: color .1s;
     // font-size: 19px;
     text-transform: uppercase;
+    font-size: 1.7rem;
+    padding-bottom: 2.7rem;
   }
   .nav-link:hover {
     color: $orange;
@@ -219,6 +225,7 @@ header {
     width: 100%;
     left: 0;
     top: 20%;
+    font-size: 3.5rem;
   }
   &__heading-name {
     // border: 1px solid blue;
@@ -226,7 +233,8 @@ header {
     width: 100%;
     left: 0;
     top: 45%;
-    font-size: 2em;
+    font-size: 2.5rem;
+    padding: 0 3rem;
   }
   &__description {
     // background-color: orange;
@@ -234,6 +242,8 @@ header {
     width: 100%;
     left: 0;
     bottom: 1%;
+    font-size: 1.5rem;
+    padding: 0 2rem;
   }
 
 }
@@ -509,8 +519,8 @@ header {
 
   &__label--co {
     position: relative;
-    background-color: $dark-blue;
-    color: $light-gray;
+    // background-color: $dark-blue;
+    color: $dark-blue;
     flex-grow: 2;
     width: 100%;
     @include experience;
@@ -725,13 +735,13 @@ header {
 .h5 {
 
   &_title {
-    font-size: 2rem;
+    font-size: 2.8rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
 
   &_school {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding-bottom: 0.5rem;
   }
 
@@ -745,12 +755,17 @@ header {
   text-align: center;
   font-size: 1.5rem;
 
+
   &-one {
-    padding-top: 1.5em;
+    font-size: 2rem;
+  }
+
+  &-two {
+    font-size: 1.7rem;
   }
 
   &-three {
-    font-size: .9rem;
+    
   }
 }
 
@@ -983,7 +998,9 @@ header {
   .navbar {
 
     .nav-link {
-      font-size: 20px;
+      font-size: 2rem;
+      padding: 1.5rem;
+      // padding-left: 30px;
     }
   }
 
@@ -1028,6 +1045,11 @@ header {
 
 
 @media(max-width: 576px) {
+  
+  .navbar {
+    background-color: black;
+  }
+  
   .hero-text-header {
     position: absolute;
     top: 0;

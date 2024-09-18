@@ -109,23 +109,17 @@
   }
 }
 
+@media(min-width: 992px) {
+  .section-title-white {
+    h2 {
+      font-size: 3rem;
+    }
+  }
 
-// .section-title-white {
-//   position: relative;
-//   text-align: center;
-//   padding: 2em 0 3em;
-//   text-transform: uppercase;
-//   font-weight: bold;
-//   color: $light;
+  .section-title {
 
-//   &::before {
-//     position: absolute;
-//     content: '';
-//     bottom: 2.4em;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     width: 4em;
-//     height: 3px;
-//     background-color: $light-gray;
-//   }
-// }
+    h2 {
+      font-size: 3rem;
+    }
+  }
+}
