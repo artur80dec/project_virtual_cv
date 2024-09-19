@@ -18,6 +18,9 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+.active {
+  color: $orange;
+}
 
 nav {
   z-index: 5;
@@ -164,7 +167,8 @@ header {
   position: relative;
   width: 70%;
   box-shadow: 0 0 2px;
-  border-radius: 8px;
+  border-radius: 25px;
+  box-shadow: 0 0 3px #333;
   z-index: 0;
   filter: grayscale(.4);
 
@@ -253,7 +257,7 @@ header {
     top: 45%;
     font-size: 2.5rem;
     padding: 0 1rem;
-    width: 70%;
+    width: 50%;
     // background-color: $gray;
   }
   &__description {
@@ -328,6 +332,7 @@ header {
 
     &-mc {
       background-color: $main-color;
+      box-shadow: 0 0 5px #333;
     }
 
     
@@ -403,7 +408,7 @@ header {
       border-bottom: 7px solid $main-color;
       border-left: 7px solid $main-color;
       box-shadow: 0 0 7px $main-color;
-      background-color: $orange;
+      // background-color: $orange;
       width: 90%;
       margin: 0 auto;
       border-radius: 7px;
@@ -414,7 +419,7 @@ header {
       }
 
       & ul>li:nth-of-type(even) {
-        color: $light;
+        color: $main-color;
       }
       & ul>li:nth-of-type(odd) {
         color: $dark-blue;
@@ -494,7 +499,7 @@ header {
 
     // to jest do ostylowania po kliknięciu
     &-check {
-      background-color: $beige-shadow;
+      background-color: $gray-shadow;
       color: #333;
     }
 
@@ -544,6 +549,7 @@ header {
     color: #333;
     border: 1px solid #ebebeb;
     box-shadow: 0 0 3px #333;
+    text-transform: uppercase;
 
     
     width: 100%;
@@ -647,6 +653,7 @@ header {
 .skills {
   background-color: #333;
   background-image: url('../img/skills_background.jpg');
+  background-size: cover;
   background-attachment: fixed;
   
 
@@ -881,7 +888,17 @@ header {
 
   .fa-brands {
     font-size: 5rem;
-    padding: 1rem 1rem;
+    padding: 1rem 3rem;
+    transition: color .5s;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $white-pencil;
   }
 
   &__boxes {
@@ -1167,36 +1184,13 @@ header {
     padding-left: 30px;
 }
 
-.skills {
-  
-  
-}
+
   
 }
 
 
 
-@media(max-width: 768px) {
-  
-  .footer__box--three {
-    display: none;
-  }
-  
-  .footer__box--one {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
 
-  }
-
-  .skills__card-text {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
 
 @media(max-width: 992px) {
   .experience__large-view {
@@ -1232,6 +1226,30 @@ header {
 
 }
 
+@media(max-width: 768px) {
+  
+  .footer__box--three {
+    display: none;
+  }
+  
+  .footer__box--one {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+  }
+
+  .skills__card-text {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+
+
 @media(max-width: 576px) {
 
   .aboutme {
@@ -1261,10 +1279,15 @@ header {
 
   .education {
 
+    
     height: 100vh;
 
     &__heading-year {
       font-size: 3rem;
+    }
+
+    &__heading-name {
+      width: 70%;
     }
     
     &__text {
