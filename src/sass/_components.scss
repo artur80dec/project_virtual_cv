@@ -76,7 +76,9 @@
       height: 5px;
       bottom: -10px;
       left: 0;
-      background-color: $main-color;
+      background-color: $light-blue;
+      border-radius: 50%;
+      // opacity: 0;
   }
   }
 }
@@ -104,7 +106,8 @@
       height: 5px;
       bottom: -10px;
       left: 0;
-      background-color: $light-gray;
+      background-color: $light-blue;
+      border-radius: 50%;
   }
   }
 }

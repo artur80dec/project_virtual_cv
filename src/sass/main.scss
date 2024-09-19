@@ -9,7 +9,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 72px;
   font-size: 62.5%;
 }
 
@@ -57,13 +57,6 @@ nav {
   .navbar-toggler {
     outline: none;
   }
-  .navbar-brand {
-    padding-left: 30px;
-    font-size: 32px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: $light;
-  }
   .nav-link {
     position: relative;
     color: $light;
@@ -79,19 +72,33 @@ nav {
   .nav-link:focus {
     color: $light-blue;
   }
+
+  .navbar-brand {
+    padding-left: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+    // font-weight: 800;
+    color: beige;
+  }
   
   .navbar-brand, .cv {
     transition: color .4s;
   }
   .cv {
     color: $light-blue;
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
   }
   .navbar-brand:hover {
-    color: $light-blue;
+    color: beige;
   }
+
+  .navbar-brand:focus {
+    color: beige;
+  }
+
   .navbar-brand:hover span {
-    color: green;
+    // color: beige;
   }
 }
 .shadow-menu-large {
@@ -167,7 +174,16 @@ header {
 }
 
 .aboutme {
+  position: relative;
+  background-color: $white-pencil;
   
+
+  // .section-title {
+  //   position: absolute;
+  //   top: 4rem;
+  //   width: 200px;
+  // }
+
   .row {
     padding: 0;
     margin: 0;
@@ -202,9 +218,10 @@ header {
 // EDUCATION 
 
 .education {
-  background-image: url('../img/education_small.jpg');
+  background-image: url('../img/education_pencil_small.jpg');
   background-size: cover;
   background-position: center;
+  
   height: 100vh;
   position: relative;
 
@@ -217,7 +234,8 @@ header {
     left: 0;
     width: 100%;
     text-align: center;
-    color: $light-gray;
+    color: $dark-blue;
+    // opacity: .6;
   }
   &__heading-year {
     // border: 1px solid white;
@@ -225,7 +243,7 @@ header {
     width: 100%;
     left: 0;
     top: 20%;
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
   &__heading-name {
     // border: 1px solid blue;
@@ -241,8 +259,8 @@ header {
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: 1%;
-    font-size: 1.5rem;
+    bottom: .1rem;
+    font-size: 1rem;
     padding: 0 2rem;
   }
 
@@ -440,6 +458,7 @@ header {
 .experience {
 
   padding-bottom: 1em;
+  background-color: #fff;
 
   &__large-view {
     height: 100vh;
@@ -718,17 +737,24 @@ header {
   .carousel-item {
     height: 680px;
   }
-  
-  h4 {
-    font-size: 1rem;
-    opacity: .5;
-    padding-left: 1rem;
-  }
 
+  h2 {
+    text-align: center;
+  }
+  
   h3 {
     font-size: 1.2rem;
+    opacity: .5;
+    // padding-left: 1rem;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  h4 {
+    font-size: 1.4rem;
     color: $main-color;
-    padding-left: 1.2rem;
+    padding: 10px 0;
+    text-align: center;
   }
 
   &__slide {
@@ -762,13 +788,13 @@ header {
   }
 
   &_school {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding-bottom: 0.5rem;
   }
 
   &_year {
-    font-size: 1.3rem;
-    padding-bottom: 20px;
+    font-size: 1.8rem;
+    padding: 10px 0;
   }
 }
 .p_description {
@@ -785,9 +811,6 @@ header {
     font-size: 1.7rem;
   }
 
-  &-three {
-    
-  }
 }
 
 .h5_title,
@@ -983,17 +1006,21 @@ header {
 
   .education {
 
-    background-image: url('../img/work_background_large.png');
+    background-image: url('../img/education_pencil.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+    background-color: $light-gray;
     height: 100vh;
 
     &__heading-name {
-      font-size: 3.9rem;
+      font-size: 5rem;
       padding: 0 3em;
     }
 
     &__description {
-      padding: 0 5em;
-      font-size: 2rem;
+      padding: 0 7rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -1026,12 +1053,20 @@ header {
   }
 
   .aboutme {
+
+    .section-title-aboutme {
+      margin-bottom: 50px;
+    }
+
+    
   
     &__text {
       text-align: justify;
       padding: 4rem 1rem;
       font-size: 18px;
     }
+
+    
   }
 
   .experience {
@@ -1064,69 +1099,41 @@ header {
 // MAX
 
 
-
-@media(max-width: 576px) {
-  
-  .navbar {
-    background-color: black;
+@media(max-width: 1200px) {
+  .section-title {
+    font-size: 20px;
   }
   
-  .hero-text-header {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 
-  header 
-  {
-    p {
-      font-size: 17px;
-    }
+  .aboutme__box-picture {
+    padding-left: 4em;
   }
-
-  .education {
-    
-    &__text {
-      font-size: .7em;
-    }
-  }
-
   .experience {
 
-    &__heading {
-      height: 400px;
-    }
-
-    img {
-      position: absolute;
-      bottom: 7%;
-      right: 30%;
-      pointer-events: none;
-    }
-
-    &__heading--co {
-      border-radius: 10px;
-    }
-
-    &__info {
-
-
-      &--text {
-        font-size: 1em;
-        padding: 1em .5em 0 0;
+    &__detail {
+      // display: none;
+      ul li {
+        font-size: 15px;
       }
     }
-
-    
   }
 
-  .footer__box--three {
-    display: none;
+  .card {
+    &-text {
+      padding: .4em .5em;
+      text-align: justify;
+      font-size: 1.4em;
+    }
   }
 
+  .footer .gg {
+    position: relative;
+    padding-left: 30px;
+}
   
 }
+
+
 
 @media(max-width: 768px) {
   
@@ -1175,43 +1182,93 @@ header {
     justify-content: flex-start;
   }
 
+  .education {
+
+    &__description {
+      font-size: 1.5rem;
+    }
+  }
+
 }
 
-@media(max-width: 1200px) {
-  .section-title {
-    font-size: 20px;
+@media(max-width: 576px) {
+  
+  .navbar {
+    background-color: black;
   }
-  .section-title-aboutme {
-    font-size: 20px;
+  
+  .hero-text-header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  .aboutme__box-picture {
-    padding-left: 4em;
+  header 
+  {
+    p {
+      font-size: 17px;
+    }
   }
+
+  .education {
+    
+    &__text {
+      font-size: .7em;
+    }
+  }
+
   .experience {
 
-    &__detail {
-      // display: none;
-      ul li {
-        font-size: 15px;
+    &__heading {
+      height: 400px;
+    }
+
+    img {
+      position: absolute;
+      bottom: 7%;
+      right: 30%;
+      pointer-events: none;
+    }
+
+    &__heading--co {
+      border-radius: 10px;
+    }
+
+    &__info {
+
+      &--text {
+        font-size: 1em;
+        padding: 1em .5em 0 0;
       }
     }
-  }
 
-  .card {
-    &-text {
-      padding: .4em .5em;
-      text-align: justify;
-      font-size: 1.4em;
+    
     }
+    
+    .skills {
+
+      &__container {
+        margin: 2rem 0;
+
+        &:hover {
+          scale: (.9);
+        }
+      }
+
+      &__card-text {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    
+
+    
   }
 
-  .footer .gg {
-    position: relative;
-    padding-left: 30px;
-}
-
-  
+  .footer__box--three {
+    display: none;
+  }
 
   
 }
+
