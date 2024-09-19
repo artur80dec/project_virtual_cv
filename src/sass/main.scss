@@ -519,8 +519,9 @@ header {
 
   &__label--co {
     position: relative;
-    // background-color: $dark-blue;
-    color: $dark-blue;
+    background-color: $dark-blue;
+    color: $orange;
+    // border: 8px solid $orange;
     flex-grow: 2;
     width: 100%;
     @include experience;
@@ -538,15 +539,16 @@ header {
 
   }
   &__label--occupation {
-    background-color: $dark-blue;
-    flex-grow: 1;
+    // background-color: $orange;
+    border: 4px solid $dark-blue;
+    
     width: 100%;
     @include experience;
-    font-size: 28px;
+    font-size: 2.5rem;
     border-radius: 8px;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    color: $light-gray;
+    color: $dark-blue;
     // border: 4px solid $dark-blue;
     
     p {
@@ -559,8 +561,9 @@ header {
   &__detail {
     grid-column: 2 / 3;
     grid-row: 4 / 8;
-    background-color: $dark-blue;
+    background-color: $orange;
     @include experience;
+    border: 4px solid $dark-blue;
     border-radius: 8px;
     
     ul {
@@ -571,7 +574,7 @@ header {
     ul > li {
       padding: 3px 0;
       font-size: 18px;
-      color: $light-gray;
+      color: $dark-blue;
       opacity: 1;
       animation: liItem .2s linear forwards;
     }
@@ -614,6 +617,11 @@ header {
 
 .skills {
 
+
+  &__wrapper {
+    padding-bottom: 3rem;
+  }
+
   &__container {
     // border: 1px solid wheat;
     margin: 3em 0;
@@ -632,6 +640,11 @@ header {
       background-color: #fff;
       // color: $main-color;
     }
+
+    &:hover .skills__card-text {
+      color: white;
+    }
+    
 
   }
 
@@ -659,32 +672,40 @@ header {
   &__img {
     opacity: .7;
     position: relative;
+    height: 112px;
+    width: 112px;
+    margin: 0 auto;
   }
 
   &__shadow {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 112px;
+    height: 112px;
+    // transform: translateX(50%);
+    // transform: translateY(-50%);
     // width: 90px;
+
+
+
     opacity: 0;
     transition: opacity .2s;
 
   }
 
-
-
-  
-
   &__card-text {
-    padding-top: 1.5em;
+    padding-top: 4rem;
     color: $light-gray;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding-left: 6rem;
     padding-right: 6rem;
     // border: 1px solid wheat;
     width: 90%;
     margin: 0 auto;
+    height: 120px;
   }
 
   
