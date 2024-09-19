@@ -67,9 +67,12 @@ const occupation = document.querySelector('.experience__label--occupation');
 
 
 
+
 const switcher = () => {
   expBtn.forEach(btn => btn.addEventListener('click', ()=> {
     if (btn.matches('.experience__year--one')) {
+      nameCompany.classList.add('experience__sabert');
+      occupation.classList.add('experience__sabert__alt');
       nameCompany.innerHTML = '';
       nameCompany.innerHTML = '<p>Sabert Poland: sp z o.o.</p>';
       occupation.innerHTML = '';
@@ -83,6 +86,8 @@ const switcher = () => {
         <li>drukowanie etykiet</li>
       </ul>`;
     } else if (btn.matches('.experience__year--two'))  {
+      nameCompany.classList.add('experience__ups');
+      occupation.classList.add('experience__ups__alt');
       nameCompany.innerHTML = '';
       nameCompany.innerHTML = '<p>UPS Global Business Services</p>';
       occupation.innerHTML = '';
@@ -98,6 +103,8 @@ const switcher = () => {
         <li>przygotowania raportu z ruchu reklamacyjnego wybranych firm w stosunku do firmy UPS.</li>
       </ul>`
     } else if (btn.matches('.experience__year--three'))  {
+      nameCompany.classList.add('experience__ceri');
+      occupation.classList.add('experience__ceri__alt');
       nameCompany.innerHTML = '';
       nameCompany.innerHTML = '<p>Ceri International</p>';
       occupation.innerHTML = '';
@@ -110,6 +117,8 @@ const switcher = () => {
         <li>archiwizacja zweryfikowanych dokumentów do magazynu.</li>
       </ul>`
     } else if (btn.matches('.experience__year--four'))  {
+      nameCompany.classList.add('experience__voice');
+      occupation.classList.add('experience__voice__alt');
       nameCompany.innerHTML = '';
       nameCompany.innerHTML = '<p>Voice Contact Center</p>';
       occupation.innerHTML = '';
@@ -125,6 +134,8 @@ const switcher = () => {
         <li>ustalanie telefonicznie terminów oględzin z poszkodowanymi</li>
       </ul>`
     } else if (btn.matches('.experience__year--five'))  {
+      nameCompany.classList.add('experience__compal');
+      occupation.classList.add('experience__compal__alt');
       nameCompany.innerHTML = '';
       nameCompany.innerHTML = '<p>Compal Europe Poland</p>';
       occupation.innerHTML = '';
@@ -138,6 +149,8 @@ const switcher = () => {
         <li>szkolenie i przygotowywanie nowozatrudnionych osób do pracy na stanowisku serwisanta komputerowego</li>
       </ul>`
     } else if (btn.matches('.experience__year--six'))  {
+      nameCompany.classList.add('experience__dhl');
+      occupation.classList.add('experience__dhl__alt');
       nameCompany.innerHTML = '';
       nameCompany.innerHTML = '<p>DHL Express</p>';
       occupation.innerHTML = '';
@@ -152,6 +165,8 @@ const switcher = () => {
         <li>rejestrowanie reklamacji</li>
       </ul>`
     } else if (btn.matches('.experience__year--seven'))  {
+      nameCompany.classList.add('experience__nomi');
+      occupation.classList.add('experience__nomi__alt');
       nameCompany.innerHTML = '';
       nameCompany.innerHTML = '<p>Nomi</p>';
       occupation.innerHTML = '';
