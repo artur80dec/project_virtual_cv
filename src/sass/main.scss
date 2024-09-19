@@ -719,8 +719,8 @@ header {
     padding-top: 4rem;
     color: $light-gray;
     font-size: 1.7rem;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     // border: 1px solid wheat;
     width: 90%;
     margin: 0 auto;
@@ -1119,10 +1119,26 @@ header {
   }
 
   .card {
+
+    &-body {
+      margin-bottom: 2rem;
+    }
+    &-title {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 2.8rem;
+    }
+
+    h4 {
+      font-size: 2rem;
+    }
+
     &-text {
       padding: .4em .5em;
       text-align: justify;
-      font-size: 1.4em;
+      font-size: 2rem;
     }
   }
 
@@ -1152,8 +1168,8 @@ header {
   }
 
   .skills__card-text {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 
@@ -1166,7 +1182,7 @@ header {
     &-text {
       padding: .4em .5em;
       text-align: justify;
-      font-size: .7em;
+      font-size: 1.8rem;
     }
   }
 
@@ -1192,6 +1208,13 @@ header {
 }
 
 @media(max-width: 576px) {
+
+  .aboutme {
+
+    .card-text {
+      font-size: 1.5rem;
+    }
+  }
   
   .navbar {
     background-color: black;
@@ -1212,10 +1235,21 @@ header {
   }
 
   .education {
+
+    height: 100vh;
+
+    &__heading-year {
+      font-size: 3rem;
+    }
     
     &__text {
       font-size: .7em;
     }
+
+    &__description {
+      display: none;
+    }
+
   }
 
   .experience {
