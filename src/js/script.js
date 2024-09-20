@@ -3,6 +3,7 @@ const navigationBar = document.querySelector('.navbar-collapse');
 const navLinkItem = document.querySelectorAll('.nav-link');
 // const allBoxesExp = document.querySelector('.experience__boxes');
 const allHeadingExp = document.querySelectorAll('.experience__heading');
+const footerYear = document.querySelector('.footer__year');
 
 // shadow menu
 
@@ -20,6 +21,13 @@ document.addEventListener('DOMContentLoaded', function()
   window.addEventListener('scroll', addShadowMenu);
 })
 
+
+const handleShowYear = () => {
+  const date = (new Date).getFullYear();
+  footerYear.textContent = date;
+}
+
+handleShowYear();
 
 // hidden menu on small large screen
 

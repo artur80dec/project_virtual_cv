@@ -987,6 +987,20 @@ header {
       background: url('../img/gg_black.png') no-repeat;
     }
   }
+
+  hr {
+    color: $white-pencil;
+  }
+
+  &__bottom-text {
+    color: $white-pencil;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 1.5rem;
+
+  }
   
 }
 
