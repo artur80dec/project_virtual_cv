@@ -18,9 +18,7 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-.active {
-  color: $orange;
-}
+
 
 nav {
   z-index: 5;
@@ -98,6 +96,10 @@ nav {
 
   .navbar-brand:focus {
     color: beige;
+  }
+
+  .active {
+    color: $beige;
   }
 
   

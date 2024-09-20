@@ -188,6 +188,9 @@ const changeStyle = (e) => {
   e.target.classList.add('experience__year-check');
 }
 
+// colors link depend on sections
+
+
 
 switcher();
 
