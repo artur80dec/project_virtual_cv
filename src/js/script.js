@@ -87,9 +87,9 @@ const switcher = () => {
       occupation.innerHTML = '<p>pracownik magazynowy</p>';
       expDetail.innerHTML = '';
       expDetail.innerHTML = `<ul>
-        <li>pakowanie gotowych produktów firmy „Sabert” w opakowanie zbiorcze</li>
-        <li>przestrzenne rozmieszczenie zbiorczych opakować na paletę</li>
-        <li>foliowanie palety za pomocą owijarki do palet</li>
+        <li>pakowanie gotowych produktów w opakowania zbiorcze</li>
+        <li>rozmieszczenie przestrzenne zbiorczych opakować na paletę</li>
+        <li>foliowanie palety owijarką do palet</li>
         <li>przygotowanie zafoliowanej palety do transportu</li>
         <li>drukowanie etykiet</li>
       </ul>`;
@@ -102,10 +102,9 @@ const switcher = () => {
       occupation.innerHTML = '<p>pracownik administracyjny</p>';
       expDetail.innerHTML = '';
       expDetail.innerHTML = `<ul>
-        <li>sporządzanie raportów z przeprocesowanych reklamacji z poprzedniego dnia w Excel’u</li>
+        <li>sporządzanie raportów z przeprocesowanych reklamacji w Excel’u</li>
         <li>rejestrowanie w wewnętrznym systemie komputerowym reklamacji</li>
-        <li>budowanie lojalności wobec obecnych kontrahentów</li>
-        <li>przesłanie ww. reklamacji odpowiednim jednostkom do dalszego procesowania</li>
+        <li>budowanie dobrego wizerunku firmy - przez profesjonalną obsługę klienta</li>
         <li>prowadzenie korespondencji mailowej z klientami z całego świata.</li>
         <li>przyjmowanie zgłoszeń telefonicznych na przesyłki międzynarodowe</li>
         <li>przygotowania raportu z ruchu reklamacyjnego wybranych firm w stosunku do firmy UPS.</li>
@@ -120,9 +119,10 @@ const switcher = () => {
       expDetail.innerHTML = '';
       expDetail.innerHTML = `<ul>
         <li>weryfikacja dokumentacji klientów niemieckiego Banku „CommerzBank” pod względem poprawności danych z wewnętrzną bazą elektroniczną.</li>
-        <li>segregowanie dokumentów na różne ich rodzaje pod względem merytorycznym oraz przedstawianie tych informacji w postaci zapisu elektronicznego.</li>
+        <li>segregowanie dokumentów według ustalonych norm.</li>
+        <li>rejestracja zweryfikowanych dokumentów w systemie informatycznym</li>
         <li>skanowanie dokumentów do wewnętrznej aplikacji banku.</li>
-        <li>archiwizacja zweryfikowanych dokumentów do magazynu.</li>
+        <li>archiwizacja</li>
       </ul>`
     } else if (btn.matches('.experience__year--four'))  {
       nameCompany.classList.add('experience__voice');
@@ -135,8 +135,7 @@ const switcher = () => {
       expDetail.innerHTML = `<ul>
         <li>uzupełnianie brakującej dokumentacji w zarejestrowanych szkodach</li>
         <li>przekazywanie informacji klientom odnośnie wyniku decyzyjnego szkody</li>
-        <li>rejestracja szkód wypadkowych komunikacyjnych</li>
-        <li>rejestracja szkód majątkowych</li>
+        <li>rejestracja szkód wypadkowych komunikacyjnych i majątkowych</li>
         <li>przyjmowanie zgłoszeń dotyczących zdarzeń szpitalnych, zgonów i urodzeń dzieci</li>
         <li>przekazywanie informacji o stanie procesowania szkody</li>
         <li>ustalanie telefonicznie terminów oględzin z poszkodowanymi</li>
@@ -151,7 +150,7 @@ const switcher = () => {
       expDetail.innerHTML = '';
       expDetail.innerHTML = `<ul>
         <li>sprawdzanie stabilności systemu</li>
-        <li>aktualizacja bios'ów  płyt głównych</li>
+        <li>aktualizacja bios'ów płyt głównych</li>
         <li>sprawdzanie wydajności podzespołów komputerowych</li>
         <li>realizacja planów ilościowych i jakościowych</li>
         <li>szkolenie i przygotowywanie nowozatrudnionych osób do pracy na stanowisku serwisanta komputerowego</li>
@@ -181,8 +180,8 @@ const switcher = () => {
       occupation.innerHTML = '<p>sprzedawca</p>';
       expDetail.innerHTML = '';
       expDetail.innerHTML = `<ul>
-      <li>kontrola zamówień towarów</li>
-      <li>organizacja pracy na podległych działach</li>
+      <li>organizacja zamówień towarów</li>
+      <li>zarządzanie pracą na podległych działach</li>
       <li>przyjmowanie reklamacji od klientów</li>
       <li>sprzedaż produktów budowlanych</li>
     </ul>`

@@ -465,8 +465,14 @@ header {
 
 
 .experience {
-  
 
+  &__date {
+    font-size: 1.7em;
+    margin-left: 50px;
+    text-transform: uppercase;
+    opacity: .7;
+  }
+  
   padding-bottom: 1em;
   background-color: #fff;
 
@@ -483,7 +489,7 @@ header {
   }
 
   &__year {
-
+    position: relative;
     background-color: $gray;
     // border: 4px solid $dark-blue;
     @include experience;
@@ -493,6 +499,18 @@ header {
     color: #333;
     transition: scale .5s, background-color .5s, color .3s;
     box-shadow: 0 0 3px #333;
+
+    // &:first-child::before {
+    //   content: 'kliknij datę';
+    //   position: absolute;
+    //   top: -40px;
+    //   // left: 30;
+    //   width: fit-content;
+    //   height: 30px;
+    //   // background-color: red;
+    //   font-size: 1.8rem;
+    // }
+
 
     &:hover {
       scale: (.95);
@@ -575,7 +593,6 @@ header {
   &__label--occupation {
     background-color: #ebebeb;
     // border: 4px solid $dark-blue;
-    
     width: 100%;
     @include experience;
     font-size: 2.5rem;
@@ -606,14 +623,28 @@ header {
     ul {
       display: block;
       width: 70%;
+      
     }
 
     ul > li {
-      padding: 3px 0;
-      font-size: 5px;
+      position: relative;
+      //odstęp od niestandartowego punktora
+      padding-right: 20px;
+      font-size: 1.2rem;
       color: #333;
       opacity: 1;
       animation: liItem .2s linear forwards;
+      // list-style-position: outside;
+      text-align: left;
+
+
+      &::before {
+        position: absolute;
+        display: inline-block;
+        content: url('../img/arrow_right_png.png');
+        left: -7%;
+        top: 8px;
+      }
     }
 
     
@@ -1132,7 +1163,11 @@ header {
       ul > li {
         padding: 5px 0;
         font-size: 2rem;
+        list-style-type: none;
+        // padding-left: 20px;
       }
+
+
     }
   }
 
@@ -1166,7 +1201,7 @@ header {
     &__detail {
       // display: none;
       ul li {
-        font-size: 15px;
+        font-size: 21px;
       }
     }
   }
