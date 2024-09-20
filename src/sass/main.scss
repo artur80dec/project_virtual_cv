@@ -80,6 +80,7 @@ nav {
     text-transform: uppercase;
     // font-weight: 800;
     color: beige;
+    padding-top: 2.7rem;
   }
   
   .navbar-brand, .cv {
@@ -181,13 +182,7 @@ header {
   position: relative;
   background-color: $white-pencil;
   
-  
 
-  // .section-title {
-  //   position: absolute;
-  //   top: 4rem;
-  //   width: 200px;
-  // }
 
   .row {
     padding: 0;
@@ -197,7 +192,8 @@ header {
   
   &__text {
     text-align: justify;
-    font-size: 12px;
+    font-size: 1.3rem;
+    text-indent: 5rem;
   }
 }
 
@@ -467,10 +463,11 @@ header {
 .experience {
 
   &__date {
-    font-size: 1.7em;
+    font-size: 1.4rem;
     margin-left: 50px;
     text-transform: uppercase;
     opacity: .7;
+    animation: date .5s infinite linear;
   }
   
   padding-bottom: 1em;
@@ -1044,6 +1041,12 @@ header {
 
 
 @media (min-width: 576px) {
+
+  .aboutme {
+    .card-text {
+      text-indent: 3rem;
+    }
+  }
   .card {
     &-text {
       font-size: 1.45em;
@@ -1063,6 +1066,9 @@ header {
 
 
 @media (min-width: 992px) {
+
+  
+
   header.hero-img-image {
     background-image: url('../img/header_alternative_large.jpg');
   }
@@ -1113,6 +1119,13 @@ header {
 
   .marian {
     display: block;
+  }
+
+  .aboutme {
+
+    .card-text {
+      font-size: 3rem;
+    }
   }
 
   
@@ -1307,6 +1320,7 @@ header {
 
     .card-text {
       font-size: 1.5rem;
+      text-indent: 4rem;
     }
   }
   
@@ -1355,6 +1369,7 @@ header {
 
     &__heading {
       height: 400px;
+      font-size: 1.3rem;
     }
 
     img {
