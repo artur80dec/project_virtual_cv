@@ -1,6 +1,6 @@
-@import './colors';
-@import './components';
-@import './mixin';
+@use './colors' as *;
+@use './components' as *;
+@use './mixin' as *;
 
 * {
   box-sizing: border-box;
@@ -16,9 +16,22 @@ html {
 body {
   background-color: #333;
   font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
 }
 
+:root {
+  --scroll-width: 0;
+}
 
+.top-bar {
+  width: var(--scroll-width);
+  height: 7px;
+  background-color: $orange;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
 
 nav {
   z-index: 5;
@@ -111,6 +124,8 @@ nav {
 
 // HEADER
 
+
+
 header h1 {
   color: $light;
   text-transform: uppercase;
@@ -161,6 +176,14 @@ header {
   &-white {
     color: $light-gray;
   }
+}
+
+.icon-one {
+  position: fixed;
+  left: 0;
+  top: 300px;
+
+  z-index: -5;
 }
 
 
@@ -906,7 +929,7 @@ header {
 
     p {
       text-align: center;
-      padding-bottom: 2rem;
+      padding-bottom: 1.7rem;
     }
 
     &__social-icons {
@@ -918,7 +941,7 @@ header {
 
   .fa-brands {
     font-size: 5rem;
-    padding: 1rem 3rem;
+    padding: 1rem 1.7rem;
     transition: color .5s;
 
     &:hover {

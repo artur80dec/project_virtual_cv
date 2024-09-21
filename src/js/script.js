@@ -195,11 +195,25 @@ const changeStyle = (e) => {
   e.target.classList.add('experience__year-check');
 }
 
-// colors link depend on sections
+// orange scroll Bar Width
+
+let root = document.documentElement;
+
+const handleScrollBar = () => {
+  const scroll = window.scrollY;
+  const leftToScroll = document.body.getBoundingClientRect().height - window.innerHeight;
+  const scorllBarWidth = Math.floor((scroll / leftToScroll) * 100)
+  
+  console.log(scorllBarWidth);
+  root.style.setProperty('--scroll-width', `${scorllBarWidth}%`);
+
+}
 
 
 
 switcher();
+
+window.addEventListener('scroll', handleScrollBar);
 
 expBtn.forEach(it => it.addEventListener('click', changeStyle));
 allHeadingExp.forEach(infoBox => infoBox.addEventListener('click', openInfo));
