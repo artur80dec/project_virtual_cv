@@ -36,24 +36,6 @@
   background-color: $shadow-darker;
 }
 
-.hero-img-darker-blue {
-  position: relative;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  z-index: 0;
-}
-.hero-img-darker-blue::before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-color: $shadow-blue;
-}
 
 .section-title {
   position: relative;

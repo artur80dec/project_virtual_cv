@@ -6,9 +6,10 @@
   <title>Wirtualne CV</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="./dist/css/main.min.css">
   <script src="https://kit.fontawesome.com/fc2780480f.js" crossorigin="anonymous"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -47,10 +48,15 @@
   <header class="header hero-img hero-img-image" id="home">
     <div class="hero-text text-center hero-text-header">
       <h1>Artur <span class="surname">Podkowiak</span></h1>
-      <p>Front-end Developer</p>
+      <p class="p">Front-end Developer</p>
       <!-- <p>Junior</p> -->
       
     </div>
+    <img src="./src/img/companies_icons/triangle.svg" alt="" class="header__icon header__icon-one">
+    <img src="./src/img/companies_icons/triangle.svg" alt="" class="header__icon header__icon-two">
+    <!-- <img src="./src/img/companies_icons/triangle.svg" alt="" class="header__icon header__icon-three"> -->
+    <!-- <img src="./src/img/companies_icons/triangle.svg" alt="" class="header__icon header__icon-four"> -->
+    <!-- <img src="./src/img/companies_icons/triangle.svg" alt="" class="header__icon header__icon-five"> -->
     
   </header>
   
@@ -62,7 +68,7 @@
     
     
     <div class="container">
-      <div class="section-title section-title-aboutme" data-aos="fade-right"><h2>O mnie</h2></div>
+      <div class="section-title section-title-aboutme"><h2>O mnie</h2></div>
       
       
       
@@ -93,7 +99,7 @@
 
 
   <section class="section education" id="education">
-    <div class="section-title" data-aos="fade-right"><h2>Edukacja</h2></div>
+    <div class="section-title"><h2>Edukacja</h2></div>
     <div class="underline underline-white"></div>
 
     
@@ -111,7 +117,7 @@
   <!-- EXPERIENCE  -->
 
   <section class="section experience" id="experience">
-    <div class="section-title" data-aos="fade-right"><h2>Doświadczenie</h2></div>
+    <div class="section-title"><h2>Doświadczenie</h2></div>
     <div class="underline"></div>
 
     <div class="container">
@@ -414,7 +420,7 @@
   <!-- SKILL -->
 
   <section class="section skills" id="skills">
-    <div class="section-title-white" data-aos="fade-right"><h2>Umiejętności</h2></div>
+    <div class="section-title-white"><h2>Umiejętności</h2></div>
     <div class="underline underline-white"></div>
 
     <div class="container skills__wrapper">
@@ -517,7 +523,7 @@
   <!-- COURSES -->
 
   <section class="section courses" id="courses">
-    <div class="section-title" data-aos="fade-right"><h2>Kursy</h2></div>
+    <div class="section-title"><h2>Kursy</h2></div>
     <div class="underline"></div>
 
     <div class="courses container d-flex flex-sm-column justify-content-between align-items-center flex-column d-xl-none">
@@ -679,14 +685,14 @@
   <!-- bootsrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
       startEvent: 'DOMContentLoaded',
-      offset: 120,
-      once: true,
+      offset: 200,
       delay: 0,
-      duration: 400
+      duration: 400,
+      once: true
     });
   </script>
   <!-- mine js -->

@@ -1,6 +1,7 @@
-@use './colors' as *;
-@use './components' as *;
-@use './mixin' as *;
+@import './colors';
+@import './components';
+@import './mixin';
+@import './animation';
 
 * {
   box-sizing: border-box;
@@ -138,7 +139,7 @@ header p {
   font-size: 20px;
 }
 header {
-  p:last-child {
+  .p {
     margin: -1em;
     opacity: 0.4;
   }
@@ -178,13 +179,28 @@ header {
   }
 }
 
-.icon-one {
-  position: fixed;
-  left: 0;
-  top: 300px;
-
+.header__icon {
+  position: absolute;
+  opacity: .1;
   z-index: -5;
+
+  &-one {
+    left: 15%;
+    top: 60%;
+    width: 250px;
+    animation: icon 70s infinite linear;
+  }
+
+  &-two {
+    left: 80%;
+    top: 5%;
+    width: 400px;
+    animation: iconReverse 60s infinite linear;
+  }
+
+  
 }
+
 
 
 //  ABOUT ME
@@ -485,6 +501,9 @@ header {
 
 .experience {
 
+  padding-bottom: 1rem;
+  background-color: $white;
+
   &__date {
     font-size: 1.4rem;
     margin-left: 50px;
@@ -493,8 +512,6 @@ header {
     animation: date .5s infinite linear;
   }
   
-  padding-bottom: 1em;
-  background-color: #fff;
 
   &__large-view {
     height: 100vh;
@@ -940,7 +957,7 @@ header {
   }
 
   .fa-brands {
-    font-size: 5rem;
+    font-size: 4rem;
     padding: 1rem 1.7rem;
     transition: color .5s;
 
@@ -956,7 +973,7 @@ header {
 
   &__boxes {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: $light-gray;
     width: 90%;
@@ -988,7 +1005,7 @@ header {
       flex-direction: column;
       height: 100%;
       font-size: 1rem;
-      width: 20%;
+      width: 30%;
     }
     &--three {
       display: flex;
@@ -1054,6 +1071,8 @@ header {
   }
   
 }
+
+
 
 
 // =====================
