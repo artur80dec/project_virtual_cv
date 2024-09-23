@@ -525,6 +525,7 @@ header {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: repeat(7, 1fr);
     gap: 10px 10px;
+    margin-bottom: 6rem;
   }
 
   &__year {
@@ -1461,6 +1462,10 @@ header {
     display: none;
   }
 
-  
 }
 
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .experience__container__grid {
+    height: 800px;
+  }
+}
