@@ -595,14 +595,6 @@ header {
   }
 
 
-  // &__label__box {
-  //   // grid-column: 2 /3;
-  //   // grid-row: 1 / 4;
-  //   background-color: yellow;
-  //   @include experience;
-  //   justify-content: space-evenly;
-  // }
-
   &__label--co {
     position: relative;
     background-color: #ebebeb;
@@ -1481,6 +1473,16 @@ header {
 
     &__detail ul > li {
       font-size: 1.4rem;
+
+
+      &::before {
+        position: absolute;
+        display: inline-block;
+        content: url('../img/arrow_right_png.png');
+        width: 15px;
+        left: -7%;
+        top: 8px;
+      }
     }
   }
 }
