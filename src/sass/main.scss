@@ -1465,7 +1465,14 @@ header {
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
-  .experience__container__grid {
-    height: 800px;
+  .experience {
+
+    &__container__grid {
+      height: 100vh;
+    }
+
+    &__detail {
+      font-size: 1rem;
+    }
   }
 }
