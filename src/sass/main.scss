@@ -141,7 +141,7 @@ header p {
 }
 header {
   .p {
-    margin: -1em;
+    margin: 0em;
     opacity: 0.4;
   }
 }
@@ -540,17 +540,7 @@ header {
     transition: scale .5s, background-color .5s, color .3s;
     box-shadow: 0 0 3px #333;
 
-    // &:first-child::before {
-    //   content: 'kliknij datę';
-    //   position: absolute;
-    //   top: -40px;
-    //   // left: 30;
-    //   width: fit-content;
-    //   height: 30px;
-    //   // background-color: red;
-    //   font-size: 1.8rem;
-    // }
-
+  
 
     &:hover {
       scale: (.95);
@@ -619,7 +609,6 @@ header {
     }
 
   }
-
 
   
   &__label--occupation {
@@ -774,16 +763,26 @@ header {
     margin-bottom: 2em;
     height: 30px;
     @include experience;
-    opacity: .7;
+    opacity: 1;
     font-size: 1.5rem;
   }
 
   &__img {
-    opacity: .7;
+    opacity: 1;
     position: relative;
     height: 112px;
     width: 112px;
     margin: 0 auto;
+
+    &--html {
+      height: 107px;
+      width: 107px;
+    }
+
+    &--git {
+      height: 109px;
+      width: 109px;
+    }
   }
 
   &__shadow {
@@ -794,14 +793,18 @@ header {
     bottom: 0;
     width: 112px;
     height: 112px;
-    // transform: translateX(50%);
-    // transform: translateY(-50%);
-    // width: 90px;
-
-
-
+  
     opacity: 0;
     transition: opacity .2s;
+
+    &--git {
+
+      width: 112px;
+      height: 112px;
+      top: -1px;
+     
+
+    }
 
   }
 
@@ -927,6 +930,10 @@ header {
     // border: 1px solid white;
     margin: 0 auto;
     padding-top: 3em;
+  }
+
+  .wrapper_education {
+    max-width: 1200px;
   }
 
   h5 {
@@ -1199,7 +1206,7 @@ header {
     
   
     &__text {
-      text-align: justify;
+      text-align: left;
       padding: 4rem 1rem;
       font-size: 18px;
     }
@@ -1234,6 +1241,8 @@ header {
       padding-bottom: 10px;
     }
   }
+
+  
   
 }
 
@@ -1479,9 +1488,9 @@ header {
         position: absolute;
         display: inline-block;
         content: url('../img/arrow_right_png.png');
-        width: 15px;
+        width: 10px;
         left: -7%;
-        top: 8px;
+        top: 3px;
       }
     }
   }

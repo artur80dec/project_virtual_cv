@@ -69,15 +69,17 @@ const clickOut = e => {
 
 //pobieramy divy z datami
 const expBtn = document.querySelectorAll('.experience__year');
-const expDetail = document.querySelector('.experience__detail');
 const nameCompany = document.querySelector('.experience__label--co');
 const occupation = document.querySelector('.experience__label--occupation');
+const expDetail = document.querySelector('.experience__detail');
+const companies = document.querySelector('.companies');
 
 
 
 
 const switcher = () => {
   expBtn.forEach(btn => btn.addEventListener('click', ()=> {
+    const liItem = companies.content.cloneNode(true);
     if (btn.matches('.experience__year--one')) {
       nameCompany.classList.add('experience__sabert');
       occupation.classList.add('experience__sabert__alt');
@@ -86,13 +88,7 @@ const switcher = () => {
       occupation.innerHTML = '';
       occupation.innerHTML = '<p>pracownik magazynowy</p>';
       expDetail.innerHTML = '';
-      expDetail.innerHTML = `<ul>
-        <li>pakowanie gotowych produktów w opakowania zbiorcze</li>
-        <li>rozmieszczenie przestrzenne zbiorczych opakować na paletę</li>
-        <li>foliowanie palety owijarką do palet</li>
-        <li>przygotowanie zafoliowanej palety do transportu</li>
-        <li>drukowanie etykiet</li>
-      </ul>`;
+      expDetail.innerHTML = liItem.querySelector('.li-sabert').innerHTML;
     } else if (btn.matches('.experience__year--two'))  {
       nameCompany.classList.add('experience__ups');
       occupation.classList.add('experience__ups__alt');
@@ -101,14 +97,7 @@ const switcher = () => {
       occupation.innerHTML = '';
       occupation.innerHTML = '<p>pracownik administracyjny</p>';
       expDetail.innerHTML = '';
-      expDetail.innerHTML = `<ul>
-        <li>sporządzanie raportów z przeprocesowanych reklamacji w Excel’u</li>
-        <li>rejestrowanie w wewnętrznym systemie komputerowym reklamacji</li>
-        <li>budowanie dobrego wizerunku firmy - przez profesjonalną obsługę klienta</li>
-        <li>prowadzenie korespondencji mailowej z klientami z całego świata.</li>
-        <li>przyjmowanie zgłoszeń telefonicznych na przesyłki międzynarodowe</li>
-        <li>przygotowania raportu z ruchu reklamacyjnego wybranych firm w stosunku do firmy UPS.</li>
-      </ul>`
+      expDetail.innerHTML = liItem.querySelector('.li-ups').innerHTML;
     } else if (btn.matches('.experience__year--three'))  {
       nameCompany.classList.add('experience__ceri');
       occupation.classList.add('experience__ceri__alt');
@@ -117,13 +106,7 @@ const switcher = () => {
       occupation.innerHTML = '';
       occupation.innerHTML = '<p>asystent ds. obsługi procesów bankowych</p>';
       expDetail.innerHTML = '';
-      expDetail.innerHTML = `<ul>
-        <li>weryfikacja dokumentacji klientów niemieckiego Banku „CommerzBank” pod względem poprawności danych z wewnętrzną bazą elektroniczną.</li>
-        <li>segregowanie dokumentów według ustalonych norm.</li>
-        <li>rejestracja zweryfikowanych dokumentów w systemie informatycznym</li>
-        <li>skanowanie dokumentów do wewnętrznej aplikacji banku.</li>
-        <li>archiwizacja</li>
-      </ul>`
+      expDetail.innerHTML = liItem.querySelector('.li-ceri').innerHTML;
     } else if (btn.matches('.experience__year--four'))  {
       nameCompany.classList.add('experience__voice');
       occupation.classList.add('experience__voice__alt');
@@ -132,14 +115,7 @@ const switcher = () => {
       occupation.innerHTML = '';
       occupation.innerHTML = '<p>konsultant ds. obsługi klienta</p>';
       expDetail.innerHTML = '';
-      expDetail.innerHTML = `<ul>
-        <li>uzupełnianie brakującej dokumentacji w zarejestrowanych szkodach</li>
-        <li>przekazywanie informacji klientom odnośnie wyniku decyzyjnego szkody</li>
-        <li>rejestracja szkód wypadkowych komunikacyjnych i majątkowych</li>
-        <li>przyjmowanie zgłoszeń dotyczących zdarzeń szpitalnych, zgonów i urodzeń dzieci</li>
-        <li>przekazywanie informacji o stanie procesowania szkody</li>
-        <li>ustalanie telefonicznie terminów oględzin z poszkodowanymi</li>
-      </ul>`
+      expDetail.innerHTML = liItem.querySelector('.li-voice').innerHTML;
     } else if (btn.matches('.experience__year--five'))  {
       nameCompany.classList.add('experience__compal');
       occupation.classList.add('experience__compal__alt');
@@ -148,13 +124,7 @@ const switcher = () => {
       occupation.innerHTML = '';
       occupation.innerHTML = '<p>tester płyt głównych</p>';
       expDetail.innerHTML = '';
-      expDetail.innerHTML = `<ul>
-        <li>sprawdzanie stabilności systemu</li>
-        <li>aktualizacja bios'ów płyt głównych</li>
-        <li>sprawdzanie wydajności podzespołów komputerowych</li>
-        <li>realizacja planów ilościowych i jakościowych</li>
-        <li>szkolenie i przygotowywanie nowozatrudnionych osób do pracy na stanowisku serwisanta komputerowego</li>
-      </ul>`
+      expDetail.innerHTML = liItem.querySelector('.li-compal').innerHTML;
     } else if (btn.matches('.experience__year--six'))  {
       nameCompany.classList.add('experience__dhl');
       occupation.classList.add('experience__dhl__alt');
@@ -163,14 +133,7 @@ const switcher = () => {
       occupation.innerHTML = '';
       occupation.innerHTML = '<p>doradca klienta</p>';
       expDetail.innerHTML = '';
-      expDetail.innerHTML = `<ul>
-        <li>rejestracja zleceń usług transportowych</li>
-        <li>kontrola realizacji zamówień</li>
-        <li>budowanie lojalności wobec obecnych kontrahentów</li>
-        <li>koordynowanie i wdrażanie działań interwencyjnych w nagłych sytuacjach awaryjnych (w przypadku źle wykonanej usługi)</li>
-        <li>prowadzenie aktywnej sprzedaży usług dodatkowych, jakimi dysponuje firma „DHL Express” na terenie kraju</li>
-        <li>rejestrowanie reklamacji</li>
-      </ul>`
+      expDetail.innerHTML = liItem.querySelector('.li-dhl').innerHTML;
     } else if (btn.matches('.experience__year--seven'))  {
       nameCompany.classList.add('experience__nomi');
       occupation.classList.add('experience__nomi__alt');
@@ -179,12 +142,7 @@ const switcher = () => {
       occupation.innerHTML = '';
       occupation.innerHTML = '<p>sprzedawca</p>';
       expDetail.innerHTML = '';
-      expDetail.innerHTML = `<ul>
-      <li>organizacja zamówień towarów</li>
-      <li>zarządzanie pracą na podległych działach</li>
-      <li>przyjmowanie reklamacji od klientów</li>
-      <li>sprzedaż produktów budowlanych</li>
-    </ul>`
+      expDetail.innerHTML = liItem.querySelector('.li-nomi').innerHTML;
     };
   }));
 };
@@ -219,7 +177,6 @@ expBtn.forEach(it => it.addEventListener('click', changeStyle));
 allHeadingExp.forEach(infoBox => infoBox.addEventListener('click', openInfo));
 window.addEventListener('click', clickOut);
 buttonToggler.addEventListener('click', hiddenMenu);
-
 
 
 
