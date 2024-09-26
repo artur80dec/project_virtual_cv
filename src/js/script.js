@@ -84,7 +84,7 @@ const switcher = () => {
       nameCompany.classList.add('experience__sabert');
       occupation.classList.add('experience__sabert__alt');
       nameCompany.innerHTML = '';
-      nameCompany.innerHTML = '<p>Sabert Poland: sp z o.o.</p>';
+      nameCompany.innerHTML = '<p>Sabert Poland</p>';
       occupation.innerHTML = '';
       occupation.innerHTML = '<p>pracownik magazynowy</p>';
       expDetail.innerHTML = '';

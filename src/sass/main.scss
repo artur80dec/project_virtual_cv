@@ -264,7 +264,7 @@ header {
   background-position: center;
   
   // height: 100vh;
-  height: 950px;
+  min-height: 1050px;
   position: relative;
 
 
@@ -302,8 +302,12 @@ header {
   &__description {
     // background-color: orange;
     position: absolute;
-    width: 100%;
-    left: 0;
+    // width: 100%;
+    margin-top: 4rem;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    // background-color: red;
     bottom: .1rem;
     font-size: 1rem;
     padding: 0 2rem;
@@ -1314,7 +1318,7 @@ header {
   .card {
     &-text {
       padding: .4em .5em;
-      text-align: justify;
+      text-align: left;
       font-size: 1.8rem;
     }
   }
@@ -1418,7 +1422,7 @@ header {
   .experience {
 
     &__heading {
-      height: 400px;
+      height: 230px;
       font-size: 1.3rem;
     }
 
